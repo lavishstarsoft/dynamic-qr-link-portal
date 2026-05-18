@@ -121,7 +121,7 @@ export default function Home() {
   };
 
   const addLink = () => {
-    setLinks([...links, { id: Date.now().toString(), type: 'custom', title: 'Website', url: '' }]);
+    setLinks([...links, { id: crypto.randomUUID(), type: 'custom', title: 'Website', url: '' }]);
   };
 
   const updateLink = (id: string, updates: Partial<LinkField>) => {
@@ -194,10 +194,10 @@ export default function Home() {
                           onChange={(e) => updateLink(link.id, { type: e.target.value as LinkType })}
                           className="w-full bg-transparent border-none text-xs font-bold text-white uppercase tracking-wider focus:outline-none cursor-pointer"
                         >
-                          <option value="play">Play Store</option>
-                          <option value="ios">App Store</option>
-                          <option value="yt">YouTube</option>
-                          <option value="custom">Custom Link</option>
+                          <option value="play" className="text-black">Play Store</option>
+                          <option value="ios" className="text-black">App Store</option>
+                          <option value="yt" className="text-black">YouTube</option>
+                          <option value="custom" className="text-black">Custom Link</option>
                         </select>
                       </div>
 
