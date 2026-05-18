@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="15" fill="#B9004B"/>
+  <text x="50" y="45" font-family="Arial, sans-serif" font-weight="900" font-size="36" fill="white" text-anchor="middle" dominant-baseline="alphabetic">NO.1</text>
+  
+  <!-- Play button as O -->
+  <g transform="translate(15, 52)">
+    <circle cx="15" cy="15" r="13" stroke="white" stroke-width="4.5" fill="none"/>
+    <path d="M11 9L20 15L11 21V9Z" fill="white"/>
+  </g>
+  
+  <text x="68" y="82" font-family="Arial, sans-serif" font-weight="900" font-size="34" fill="white" text-anchor="middle" dominant-baseline="alphabetic">TT</text>
+</svg>

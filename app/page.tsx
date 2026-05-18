@@ -15,6 +15,8 @@ interface LinkField {
   customImage?: string;
 }
 
+const logoBase64 = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICA8cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjE1IiBmaWxsPSIjQjkwMDRCIi8+CiAgPHRleHQgeD0iNTAiIHk9IjQ1IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtc2l6ZT0iMzYiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0iYWxwaGFiZXRpYyI+Tk8uMTwvdGV4dD4KICAKICA8IS0tIFBsYXkgYnV0dG9uIGFzIE8gLS0+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTUsIDUyKSI+CiAgICA8Y2lyY2xlIGN4PSIxNSIgY3k9IjE1IiByPSIxMyIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSI0LjUiIGZpbGw9Im5vbmUiLz4KICAgIDxwYXRoIGQ9Ik0xMSA5TDIwIDE1TDExIDIxVjlaIiBmaWxsPSJ3aGl0ZSIvPgogIDwvZz4KICAKICA8dGV4dCB4PSI2OCIgeT0iODIiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1zaXplPSIzNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJhbHBoYWJldGljIj5UVDwvdGV4dD4KPC9zdmc+";
+
 export default function Home() {
   const [links, setLinks] = useState<LinkField[]>([]);
   const [qrUrl, setQrUrl] = useState('');
@@ -291,7 +293,13 @@ export default function Home() {
                       size={256} 
                       level="H" 
                       includeMargin={false}
-                      fgColor="#B9004B" 
+                      fgColor="#B9004B"
+                      imageSettings={{
+                        src: logoBase64,
+                        height: 60,
+                        width: 60,
+                        excavate: true,
+                      }}
                     />
                   </div>
                 )}
@@ -335,7 +343,13 @@ export default function Home() {
             size={400} 
             level="H" 
             includeMargin={true}
-            fgColor="#000000" 
+            fgColor="#000000"
+            imageSettings={{
+              src: logoBase64,
+              height: 80,
+              width: 80,
+              excavate: true,
+            }}
           />
           <p className="mt-8 text-xl font-medium text-gray-700">Find us on the App Store, Play Store, and YouTube!</p>
         </div>
