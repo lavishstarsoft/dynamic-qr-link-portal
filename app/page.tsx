@@ -121,15 +121,15 @@ export default function Home() {
   };
 
   const addLink = () => {
-    setLinks([...links, { id: crypto.randomUUID(), type: 'custom', title: 'Website', url: '' }]);
+    setLinks(prev => [...prev, { id: crypto.randomUUID(), type: 'custom', title: 'Website', url: '' }]);
   };
 
   const updateLink = (id: string, updates: Partial<LinkField>) => {
-    setLinks(links.map(l => l.id === id ? { ...l, ...updates } : l));
+    setLinks(prev => prev.map(l => l.id === id ? { ...l, ...updates } : l));
   };
 
   const removeLink = (id: string) => {
-    setLinks(links.filter(l => l.id !== id));
+    setLinks(prev => prev.filter(l => l.id !== id));
   };
 
   const getIconForType = (type: LinkType) => {
