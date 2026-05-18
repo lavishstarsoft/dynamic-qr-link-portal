@@ -1,0 +1,6 @@
+{
+  "name": "Dynamic QR Link Portal",
+  "description": "Generate a single QR code that links to Play Store, App Store, and YouTube indefinitely.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
