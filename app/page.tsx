@@ -121,7 +121,7 @@ export default function Home() {
   };
 
   const addLink = () => {
-    setLinks(prev => [...prev, { id: crypto.randomUUID(), type: 'custom', title: 'Website', url: '' }]);
+    setLinks(prev => [...prev, { id: Math.random().toString(36).substring(2, 10), type: 'custom', title: 'Website', url: '' }]);
   };
 
   const updateLink = (id: string, updates: Partial<LinkField>) => {

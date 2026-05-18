@@ -19,5 +19,19 @@
     "title": "YouTube",
     "url": "https://www.youtube.com/@no1newstelugu5",
     "customImage": ""
+  },
+  {
+    "id": "dv8sepvc",
+    "type": "custom",
+    "title": "Facebook",
+    "url": "https://www.facebook.com/profile.php?id=61573190087478",
+    "customImage": "/uploads/1779110963160-883266280-fa.png"
+  },
+  {
+    "id": "somt7333",
+    "type": "custom",
+    "title": "instagram",
+    "url": "https://www.instagram.com/no.1news_official/",
+    "customImage": "/uploads/1779111060177-357540377-pngtree-three-dimensional-instagram-icon-png-image_9015419.png"
   }
 ]
